@@ -37,4 +37,7 @@ Rails.application.configure do
 
   #Reuired for Heroku
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
+  #For paper clip error
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end
